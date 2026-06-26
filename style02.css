@@ -149,4 +149,25 @@ border: 2px solid wheat;
     background-color:#072d42;
     margin-top: 2px;
     border-radius: 8px;
+        
+}
+.footer h2{
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 2px;
+    color: white;
+}
+.footer a{
+    color: white;
+    /* display: flex; */
+}
+.footer h3{
+    color: white;
+    font-size: 1.5rem;
+    margin-left: 5px;
+}
+.footer #fc{
+    margin-bottom: 5px;
+    margin-left: 5px;
+    
 }
