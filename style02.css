@@ -10,7 +10,17 @@
     justify-content: space-evenly;
     align-items: center;
     position: fixed;
-    z-index: 1000;
+    z-index: 500;
+}
+.navbar span{
+    margin:10px;
+    color:goldenrod;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+.navbar i{
+    color:goldenrod;
+    font-size: 1.5rem;
 }
 .navbar a{
     text-decoration: none;
@@ -22,16 +32,24 @@
     transform: scale(1.05);
     color: #1a3b4e;
 }
-.navbar img{
-    height: 80px;
-    width: 90px;
-    position: absolute;
-    left: 10px;
-    border-radius: 30px;
-    padding-left: 20px;
+.navbar button{
+    /* font-size: 1.2rem; */
+    width: 80px;
+    height: 30px;
+    font-size: 1.02rem;
+    border-radius: 8px;
+    background-color: white;
+    color:black;
+}
+.navbar button:hover{
+    background-color: goldenrod;
+    transition: 1s ease;
+    color:white;
+    border: 2px solid white;
 }
 .herosection img{
     width: 100%;
+    display:block;
     height: 600px;
 }
 .herosection button{
@@ -59,93 +77,82 @@
     left: 33%;
     font-size: 2rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:goldenrod;
     
+}
+.herosection{
+    height: 600px;
 }
 
 .herosection button:hover{
-background-color:#f44336;
+background-color:goldenrod;
 color:white;
 border: 2px solid wheat;
 }
-.coffee-area{
-    height:auto;
+hr{
+    height: 2px;
+    background-color:goldenrod;
     width: 100%;
-    background-color: #1a3b4e;
-    border-radius: 5px;
-    margin-left: 5px;
-    margin-top: 2px;
-    color:white;
+    /* margin:2px; */
 }
-.coffee-area h1{
+
+
+
+
+
+
+.content-area{
+    height:600px;
+    width: 100%;
+    /* border:3px solid pink; */
+    background-color: #003049;
+    /* border-radius: 5px; */
+ }
+ .content-area #content-area-p,h1{
     text-align: center;
-}
-.coffee1{
-    display: flex;
-    width: 50%;
-    margin: 10px 0;
-}
-
-.coffee1 img{
-    height:250px;
-    /* width: 80%; */
-    margin-top: 5px;
-    border-radius: 8px;
-}
-.coffee1 p{
-    margin-left: 20px;
+ }
+ .content-area h1{
+    color:goldenrod;
+ }
+ .content-area p{
     color:white;
     font-size: 1.2rem;
-}
-.coffee1 img,p{
-    animation: slideright;
-    animation-range: entry 10% cover 40%;
-    animation-timeline: view();
-}
-@keyframes slideleft{
-    from{
-        transform: translateX(100%);
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-        transform: translateX(0);
-
-    }
-}
-
-
-.coffee2 #img2{
-    /* margin-top: 250px; */
-    animation: slideleft;
-    animation-range: entry 10% cover 40%;
-    animation-timeline: view();
-    position: relative;
-    right: 0%;
-
-}
-.coffee2{
+ }
+ .coffee-bar{
     display: flex;
-         
-}
-.coffee2 img{
-    height:250px;
+    margin-top: 10px;
+ }
+ .coffee-card img{
+    height:300px;
+    width: 250px;
     margin-top: 5px;
-    border-radius: 8px;
-    margin-left: 600px;
+    
+ }
+.coffee-card{
+    margin:30px;
 }
-.coffee2 p{
-    margin-left: 10px;
-    color:white;
-    font-size: 1.2rem;
+.coffee-card #star{
+    text-align: center;
+    margin-top: 2px;
+}
+.coffee-card img:hover{
+    transform: scale(1.05);
+    transition: 2s ease forward;
+    border: 2px solid white;
+}
+.coffee-card p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.coffee-card img{
+    border-radius: 8px;
 }
 
-@keyframes slideright{
-    from{transform:translateX(-100%);
-    opacity: 0;}
-    to{transform:translateX(0);
-    opacity: 1;
-}
-}
+
+
+
+
+
+
 
 .footer{
     height: 200px;
